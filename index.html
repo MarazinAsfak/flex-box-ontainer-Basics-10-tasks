@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whole flex-box-task</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding:0;
+        }
+        .z-container{
+            display: flex;
+            gap: 10px;
+        }
+        .z-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            border: 2px rgb(0, 0, 0) solid;
+            color: rgb(58, 0, 0);
+        
+        }
+        /* finish */
+        /* nav-bar-section */
+        .nav-links{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 10px;
+            list-style: none;
+            background-color: blue;
+            width: 100px;
+            border-radius: 10px;
+            margin-top:20px;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+        }
+        /* finish */
+        .t-container{
+            display:flex;
+            flex-direction: row;
+            gap: 10px;
+        
+        }
+        .ten-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            border: 2px red solid;
+        }
+        /* finish */
+        /* different-color is started */
+        .different-color{
+            display: flex;
+             gap: 10px;
+             padding: 20px;
+        }
+        .c-size{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            color: white;
+        }
+        /* different-color area */
+        .color-1{
+            background-color: blueviolet;
+
+        }
+        .color-2{
+            background-color: rgb(4, 151, 151);
+        }
+        .color-3{
+            background-color: chartreuse;
+        }
+        /* finish */
+        .h-c-container{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            height: 100px;
+
+        }
+        .center-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            background-color: yellow;
+            border: 2px red solid;
+        }
+        /* finish */
+        .v-c-container{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            gap: 10px;
+            height: 300px;
+        }
+        .v-center-box{
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            background-color: rgb(0, 179, 255);
+            border: 2px red solid;
+        }
+        /* finish */
+        .single-box-container{
+          display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 200px;
+        }
+        .single-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            color: white;
+            border-radius: 10px;
+        }
+        /* finish */
+        .try-flex{
+            /* here i notice one important point if ise the flex it'll take horizontal  */
+            /* the samel time if i use the display-block it'll change as block level of element */
+            display:block;
+           
+        }
+        .flex-black{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: cadetblue;
+            color: aliceblue;
+             margin-bottom: 10px;
+             border-radius: 10px;
+        }
+        /* finish */
+        /* here based on cards just try the responsive otherwise i didn't deceration */
+        .wrap-card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        /* each-card-section */
+        .wrap-each-card img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        /* each-main-cards */
+        .wrap-each-card{
+            width: 200px;
+            height: 200px;
+            border: 2px rgb(1, 50, 78) solid;
+            border-radius: 10px;
+        }
+        /* finish */
+        .align-text{
+            text-align: center;
+        }
+        /* demo nav-bar */
+        .nav-bar-2{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0;
+            border:2px red solid;
+            gap: 30%;
+        }
+        .nav-links-2{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            gap: 10px;
+        }
+        .nav-links-2 li a{
+            color: black;
+            text-decoration: none;
+            padding: 5px 10px;
+            color: white;
+            background-color: rgb(37, 37, 129);
+            border-radius: 5px;
+        }
+    </style>
+
+
+    
+</head>
+<body>
+    <!-- basis based -->
+    <h3>task-1</h3>
+     <div class="z-container">
+        <div class="z-box">box-1</div>
+        <div class="z-box">box-2</div>
+        <div class="z-box">box-3</div>
+        <div class="z-box">box-4</div>
+        <div class="z-box">box-5</div>
+     </div>
+    <!-- finish -->
+     <h3>task-2</h3>
+          <nav>
+        <ul class="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+     </nav>
+    
+     <h3>task-3</h3>
+
+     <div class="t-container">
+        <div class="ten-box">Box-1</div>
+        <div class="ten-box">Box-2</div>
+        <div class="ten-box">Box-3</div>
+        <div class="ten-box">Box-4</div>
+        <div class="ten-box">Box-5</div>
+        <div class="ten-box">Box-6</div>
+        <div class="ten-box">Box-7</div>
+        <div class="ten-box">Box-8</div>
+        <div class="ten-box">Box-9</div>
+        <div class="ten-box">Box-10</div>
+     </div>
+   <!-- finish -->
+    <h3>task-4</h3>
+    <div class="different-color">
+        <div class="c-size color-1">D-C-1</div>
+        <div class="c-size color-2">D-C-2</div>
+        <div class="c-size color-3">D-C-2</div>
+    </div>
+    <!-- finish -->
+     <h3>task-5</h3>
+     <div class="h-c-container">
+        <div class="center-box">box-1</div>
+        <div class="center-box">box-2</div>
+        <div class="center-box">box-3</div>
+     </div>
+
+     <h3>task-6</h3>
+       <div class="v-c-container">
+        <div class="v-center-box">v-box-1</div>
+        <div class="v-center-box">v-box-2</div>
+        <div class="v-center-box">v-box-3</div>
+     </div>
+     <!-- finish -->
+      <h3>task-7</h3>
+     <div class="single-box-container">
+        <div class="single-box">Single-box</div>
+     </div>
+
+     <!-- finish -->
+      <h3>task-8</h3>
+      <!-- compare display:block and flex -->
+       <div class="try-flex">
+          <div class="flex-black">flex-block-1</div>
+          <div class="flex-black">flex-block-2</div>
+          <div class="flex-black">flex-block-3</div>
+          <div class="flex-black">flex-block-4</div>
+       </div>
+       <!-- finish -->
+        <h3>task-9</h3>
+        <div class="wrap-card">
+            <div class="wrap-each-card">
+              
+                <img src="/asstes/img/Professional GitHub Profile Headshot.png" alt="img">
+                <div class="align-text">
+                     <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="wrap-each-card">
+                <img src="/asstes/img/Professional GitHub Profile Headshot.png" alt="img">
+                <div class="align-text">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                
+            </div>
+
+            <div class="wrap-each-card">
+               <img src="/asstes/img/Professional GitHub Profile Headshot.png" alt="img">
+               <div class="align-text">
+                 <p>Lorem ipsum dolor sit amet.</p>
+               </div>
+            </div>
+
+            <div class="wrap-each-card">
+               <img src="/asstes/img/Professional GitHub Profile Headshot.png" alt="img">
+               <div class="align-text">
+                 <p>Lorem ipsum dolor sit amet.</p>
+               </div>
+               
+            </div>
+         
+        </div>
+        <!-- finish -->
+
+        <h3>task-10</h3>
+        <div class="nav-bar-2">
+            <h2>Demo-nav</h2>
+            <nav>
+                <ul class="nav-links-2">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Contant</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+</body>
+</html>
